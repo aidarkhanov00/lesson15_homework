@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = prompt("x");
+        let y = prompt("y");
+        let menu = prompt("Калькулятор: 1) Сложение, 2) Вычитание, 3) Умножение, 4) Деление");
+
+        function Addition() {
+            return +x + +y;
+        }
+        
+        function Minus(a, b) {
+            return x - y;
+        }
+        
+        function Multiplication(a, b) {
+            return x * y;           
+        }
+        
+        function Division(a, b) {
+           return x / y;
+        }
+        
+        if (menu === "+") {
+            alert(Addition(x,y));
+        }else if (menu === "-") {
+            alert(Minus(x,y));
+        }else if (menu === "*") {
+            alert(Multiplication(x,y));
+        }else if (menu === "/") {
+            alert(Division(x,y));
+        }else{
+            alert("Ошибка");
+        }
+        // alert(Addition());
+        // alert(Minus());
+        // alert(Multiplication());
+        // alert(Division());
+
+    </script>
+
+
+</body>
+
+</html>
